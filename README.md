@@ -64,3 +64,31 @@ Multi-sheet Excel files become multiple tables. Queries run in-memory with DuckD
 
 - LLM mode needs billing/quota on your API account; otherwise the local planner still answers.
 - Keep `.openai_api_key` secret and out of version control (see `.gitignore`).
+
+## Publish to GitHub (`mail2mbabar`)
+
+Git is installed and this folder is already a repo with an initial commit on branch `main`.
+
+1. Log in with GitHub CLI (browser or token):
+
+```powershell
+cd c:\projects\DBEngine
+gh auth login
+```
+
+2. Create the remote repository and push (pick a **new** repo name if `DBEngine` is taken):
+
+```powershell
+gh repo create DBEngine --public --source=. --remote=origin --push
+```
+
+Your repo will be: `https://github.com/mail2mbabar/DBEngine`
+
+**Manual alternative:** create an empty repository named `DBEngine` on GitHub, then:
+
+```powershell
+git remote add origin https://github.com/mail2mbabar/DBEngine.git
+git push -u origin main
+```
+
+Use a [Personal Access Token](https://github.com/settings/tokens) as the password when Git prompts (HTTPS).
