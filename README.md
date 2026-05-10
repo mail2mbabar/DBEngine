@@ -1,4 +1,4 @@
-# AQIE ChatDB — Adaptive Query Interpretation Engine
+# AQIE ChatDB : Adaptive Query Interpretation Engine
 
 **AQIE ChatDB** is a small web application that lets you **upload spreadsheet databases** (CSV or Excel), then **ask questions in plain English** and get **answers backed by real SQL** running on your data — similar in spirit to a ChatGPT-style assistant, but **grounded only on files you provide**.
 
